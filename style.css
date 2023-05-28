@@ -1,1 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'inter', Arial, Helvetica, sans-serif;
+}
+
+#menu-inicio{
+    width: 100%;
+    height: 5rem;
+    background-color:#F5F7FA;
+    box-sizing: border-box;
+}
+
+.logo{
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.nav-bar ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0px;
+    margin-left: 40rem;
+    margin-top: -2.5rem ;
+    font-weight: 600px;
+}
+
+.nav-bar ul li{
+    display: inline;
+}
+
+.nav-bar ul li a {
+    color: #000;
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+.nav-bar ul li a:hover{
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.nav-bar ul li:last-child a{
+    float: right;
+    margin-right: -5rem;
+    color: #4CAF4F
+}
+
+.botao-sign{
+    background-color: #4CAF4F;
+    color: #FFF;
+    font-weight: bold;
+    width: 5.5rem;
+    height: 2.5rem;
+    position: absolute;
+    right: 15rem;
+    top: 25px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px  #91e98f8f;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao-sign::before{
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.botao-sign:hover, .botao-sign:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+  
+  .botao-sign:hover::after, .botao-sign:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+}
+  
+  
